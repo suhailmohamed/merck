@@ -1,4 +1,5 @@
 {
+  "homepage": "http://suhailmohamed.github.io/merck",
   "name": "merck",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +9,8 @@
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
     "react-scroll": "^1.7.16",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "gh-pages": "^2.2.0"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
@@ -18,7 +20,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
     "build": "yarn public-css && react-scripts build",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "public-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o public/",
     "public-sync": "yarn && browser-sync start -s --serveStatic 'public' --files 'public' --port 4000"
   },
