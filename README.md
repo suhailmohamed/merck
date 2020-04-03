@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `yarn public-sync`
+### `yarn start` or `yarn && yarn-start`
 
 Runs the public sync in the web browser.
 Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
