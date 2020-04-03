@@ -1,0 +1,135 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+// BREAKPOINTS
+$xs: "max-width: 767px"; // MOBILE
+$sm: "min-width: 768px";
+$md: "min-width: 992px";
+$lg: "min-width: 1200px";
+
+// DEFAULT RESETS
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: 0 none;
+}
+button {
+  &.btn {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+.hover_underline {
+  &:hover {
+    @media ($md) {
+      text-decoration: underline;
+    }
+  }
+}
+img {
+  max-width: 100%;
+}
+.fw {
+  width: 100%;
+}
+.scroll-locked {
+  overflow: hidden;
+}
+
+input {
+  &:focus {
+    outline: 0;
+  }
+}
+
+// SPACER
+$spacer: 8px;
+
+// BOTTOM MARGIN SPACERS
+.mb-8 {
+  margin-bottom: $spacer;
+}
+.mb-16 {
+  margin-bottom: floor($spacer * 2);
+}
+.mb-24 {
+  margin-bottom: floor($spacer * 3);
+}
+.mb-32 {
+  margin-bottom: floor($spacer * 4);
+}
+.mb-40 {
+  margin-bottom: floor($spacer * 5);
+}
+.mb-48 {
+  margin-bottom: floor($spacer * 6);
+}
+
+// TOP MARGIN SPACERS
+.mt-8 {
+  margin-top: $spacer;
+}
+.mt-16 {
+  margin-top: floor($spacer * 2);
+}
+.mt-24 {
+  margin-top: floor($spacer * 3);
+}
+.mt-32 {
+  margin-top: floor($spacer * 4);
+}
+
+.mlr-auto {
+  margin: 0 auto;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.vertical-center {
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.vertical-bottom {
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.lg-container {
+  @media ($lg) {
+    width: 1176px;
+  }
+}
+
+.xs-fullwidth {
+  @media ($xs) {
+    width: 100%;
+  }
+}
+
+.content-wrap {
+  padding-top: 120px;
+}
+
+.scroll-locked {
+  overflow: hidden;
+}
